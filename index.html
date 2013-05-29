@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="js/vendors/jquery/jquery-1.9.1.js"></script>
+    
+    <link href="js/vendors/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/vendors/bootstrap/js/bootstrap.js"></script>
+    
+    <link href="js/vendors/slider/css/slider.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/vendors/slider/js/bootstrap-slider.js"></script>
+    
+    <script type="text/javascript" src="js/vendors/crafty/crafty.js"></script>
+    <script type="text/javascript" src="js/vendors/crafty/crafty-debug-bar-dev.js"></script>
+    
+    <script type="text/javascript" src="js/craftyExtend.js"></script>
+    <script type="text/javascript" src="js/components.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="#">BlocksGame</a>
+            <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row-fluid">
+        <div class="span11 offset1">
+                <div class="btn-group" data-toggle="buttons-radio">
+                    <button id="rec" data-toggle="tooltip" title="Switch to record" class="btn active"><i class="icon-time"></i></button>
+                    <button id="play" data-toggle="tooltip" title="Switch to replay" class="btn"><i class="icon-facetime-video"></i></button>
+                </div>
+                <button id="pause" data-toggle="tooltip" title="Toggle pause" class="btn active"><i class="icon-pause" data-toggle="button"></i></button>
+                <button id="reload" data-toggle="tooltip" title="Reload at first frame" class="btn"><i class="icon-repeat"></i></button>
+                <div class="btn-group">
+                    <button class="btn"><i class="icon-backward"></i></button>
+                    <div class="btn">
+                        <div id="slider" class="slider slider-horizontal"></div>
+                    </div>
+                    <button class="btn"><i class="icon-forward"></i></button>
+                </div>
+                <input id="numInput" data-toggle="tooltip" title="Frame" type="number" value="0" min="0" style="margin-bottom:0px">
+        </div>
+    </div>
+    
+    <div class="row-fluid">
+        <div class="span11 offset1">
+            <div id="cr-stage"></div>
+        </div>
+    </div>
+</body>
+</html>
